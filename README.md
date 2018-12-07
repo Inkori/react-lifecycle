@@ -1,31 +1,44 @@
-Тема:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  1. Create-react-app
-  2. Component props and state
-  3. Lifecycle methods
+## Available Scripts
 
-Задания:
+In the project directory, you can run:
 
-  1. Установить create-react-app. Создать приложение с его помощью.
+### `npm start`
 
-  2. Установить библиотеку prop-types. Все компоненты должны иметь проверку типов.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-  3. Component props and state
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-    3.1 Создать компонент Layout, который будет служить оберткой над другими компонентами приложения. Должен состоять из двух блоков: header и main. В header отрисовывается приветственный текст: "Welcome, {username}!”. Если юзернейм не передан, вывести дефолтное значение "Welcome, Guest!". Main содержит переданный контент.
+### `npm test`
 
-    3.2 Создать компонент ProductList, который будет отображать список продуктов (список пока что захардкодить в стейт). Возле каждого продукта находится кнопка "Add to Cart", а под списком продуктов надпись "Cart: {productsCount}”. При нажатии на кнопку "Add to Cart", количество продуктов в корзине увеличивается.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-    3.3 Вынести отдельный компонент ProductListItem. Кнопка "Add to Cart" также находится в этом компоненте.
+### `npm run build`
 
-  4. Lifecycle
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-    4.1 Запросить и вывести список продуктов с json server (https://my-json-server.typicode.com/tkachenko-tatiana/shop-api).
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-    4.2 Добавить лимит на запрашиваемые продукты. По дефолту выводить 5 продуктов. Добавить кнопку "Show more" при нажатии на которую лимит повышается на 5 единиц.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-    4.3 Добавить такое условие: если лимит больше 20 то запрос на получение продуктов не делать и страницу не перерендеривать.
+### `npm run eject`
 
-    4.4 Вынести отдельный компонент Cart. Если в корзине больше 5 продуктов, вывести предупреждение. Количество продуктов приходит в пропсах, параметр показывать/не показывать предупреждение лежит в стейте.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-    4.5 Создать ErrorBoundary компонент, который будет служить оберткой над всем приложением и в случае ошибки вместо контента будет выводить ошибку "Oooppsss...Something went wrong!".
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
