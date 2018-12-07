@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "./Layout.css";
 
 export default class Layout extends Component {
   static defaultProps = {
@@ -15,3 +14,7 @@ export default class Layout extends Component {
     );
   }
 }
+Layout.propTypes = {
+  name: PropTypes.string,
+  children: PropTypes.element
+};

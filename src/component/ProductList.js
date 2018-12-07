@@ -33,10 +33,10 @@ export default class ProductList extends Component {
     let list = (
       <div>
         <div>
-          {this.state.prodlist.map(data => {
+          {this.state.prodlist.map((data, id) => {
             return (
-              <div key={data.id}>
-                <ProductListItem counter={this.updateCount} />
+              <div key={id}>
+                <ProductListItem {...data} counter={this.updateCount} />
               </div>
             );
           })}

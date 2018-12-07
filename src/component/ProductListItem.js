@@ -23,7 +23,7 @@ ProductListItem.defaultProps = {
     console.log("click event");
   }
 };
-ProductListItem.protoTypes = {
+ProductListItem.propTypes = {
   username: PropTypes.string,
   price: PropTypes.number,
   counter: PropTypes.func

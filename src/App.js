@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Layout from "./component/Layout";
-import ProductList from "./component/ProductListItem";
+import ProductList from "./component/ProductList";
 import PropTypes from "prop-types";
 
 const user = {
